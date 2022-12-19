@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
+   
+    <title>Document</title>
+</head>
+<body>
+    <header id="sec1">
+        <h2> Registration</h2>
+         <table>
+            <tr>
+                <td>
+                    <label for="">Full Name</label>
+                </td>
+                <td>
+                    <input type="text" name="fname" id="fname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Email id</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="pwd" id="pwd">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Phone number</label>
+                </td>
+                <td>
+                    <input type="text" name="phnno" id="phnno">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">What is your favourite color?(security question)</label>
+                </td>
+                <td>
+                    <input type="text" name="clr" id="clr">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <br>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="button" name="submit" id="submit"value="SUBMIT" onclick="getdetails()" >
+                </td>
+                <td>
+                    <input type="button" name="login" id="login" value="LOGIN" onclick="getpage()">
+                </td>
+            </tr>
+         </table>
+    </header>
+    <section id="sec2">
+        <h2>Login</h2>
+         <table>
+            <tr>
+                <td>
+                    <label for="">Email id</label>
+                </td>
+                <td>
+                    <input type="email" name="email1" id="email1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="pwd1" id="pwd2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <input type="button" name="submit1" id="submit1"  value="SUBMIT" onclick="inpage()">
+                </td>
+                <td>
+                    <br>
+                    <input type="button" name="fgtpwd" id="fgtpwd" value="FORGOT PASSWORD" onclick="passwordcheck()">
+                </td>
+            </tr>
+         </table>
+    </section>
+    <section id="sec3">
+        <h2>Answer the security question to change your password</h2>
+         <table>
+            <tr>
+                <td>
+                    <label for="">Enter you email id</label>
+                </td>
+                <td>
+                    <input type="text" name="email2" id="email2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <label for="">What is your favourite color?</label> 
+                </td>
+                <td>
+                    <input type="text" name="clr1" id="clr1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <input type="button" name="submit2" id="submit2" value="SUBMIT" onclick="checkdetails()">
+                </td>
+            </tr>
+         </table>
+    </section>
+    <section id="sec4">
+             <h2>Password change</h2>
+             <table>
+                <tr>
+                    <td>
+                        <label for="">Enter your email id</label>
+                    </td>
+                    <td>
+                        <input type="text" name="email4" id="email4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Enter new password</label>
+                    </td>
+                    <td>
+                        <input type="text" name="pwd3" id="pwd3">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Confirm password</label>
+                    </td>
+                    <td>
+                        <input type="text" name="pwd4" id="pwd4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <input type="button" name="submit3" id="submit3" onclick="passchange()" value="SUBMIT">
+                    </td>
+                </tr>
+             </table>
+    </section>
+    <section id="sec5">
+        <h2>Welcome <h3 id="user"></h3></h2>
+        <div class="container">
+            <div class="row">
+               
+                 <div class="col-12 col-sm-4">
+                    <h4>Brinjal</h4>
+                    <img src="images/brinjal.jpg" alt="" width="100px" height="100px">
+                     <p>Price: Rs 60 (1 kg)</p>
+                     <p>Number(in kgs)</p>
+                     <input type="number" name="price1" id="price1">
+                     <input type="button" name="addtocart" id="addtocart" value="ADD TO CART" onclick="addtothecart()">
+                 </div>
+                 <div class="col-12 col-sm-4">
+                    <h4>Potato</h4>
+                    <img src="images/potato.jpg" alt=""  width="100px" height="100px">
+                    <p>Price: Rs 50 (1 kg)</p>
+                    <p>Number(in kgs)</p>
+                    <input type="number" name="price2" id="price2">
+                    <input type="button" name="addtocart" id="addtocart" value="ADD TO CART" onclick="addtothecart()">
+                 </div>
+                 <div class="col-12 col-sm-4">
+                     <h4>Tomato</h4>
+                     <img src="images/tomato.jpg" alt="" width="100px" height="100px">
+                     <p>Price: Rs 60 (1 kg)</p>
+                     <p>Number(in kgs)</p>
+                     <input type="number" name="price3" id="price3">
+                     <input type="button" name="addtocart" id="addtocart" value="ADD TO CART" onclick="addtothecart()">
+                 </div>
+                
+            </div>
+    
+        </div>
+        <br><br>
+        <input type="button" name="checkout" id="checkout" onclick="checkout()" value="CHECK OUT">
+    </section>
+    <section id="sec6">
+          <div>
+            <h1>BILL</h1>
+            <br>
+            <h2>Total is </h2> <h3 id="tot"></h3>
+          </div>
+           
+    </section>
+</body>
+<script>
+flag = 0;
+noofusrs = 0;
+emails = []
+passwd = []
+phoneno = []
+fvclr = []
+fulnam = []
+brinj = 0;
+tomat = 0;
+potat = 0;
+totals = 0;
+function getdetails(){
+          namefull = document.getElementById("fname").value 
+          fulnam.push(namefull)
+          nameusr = document.getElementById("email").value 
+          for(let i=0;i<=noofusrs;i++)
+          {
+            if(nameusr == emails[i])
+            {
+                alert("Email id already exists")
+                document.getElementById("sec1").style.display = "none"
+                document.getElementById("sec2").style.display = "block"
+            }
+          }
+          
+          if(flag == 0)
+          {
+            emails.push(nameusr)
+          }
+          else{
+            alert("Emailid alreasy exists")
+            
+          }
+          
+          phonenum = document.getElementById("phnno").value 
+          phoneno.push(phonenum)
+          upwd = document.getElementById("pwd").value 
+          passwd.push(upwd)
+          favclr = document.getElementById("clr").value 
+          fvclr.push(favclr)
+          noofusrs +=1
+          
+}
+
+function getpage(){
+  document.getElementById("sec1").style.display = "none"
+  document.getElementById("sec2").style.display = "block"
+ 
+    
+}
+
+function checkdetails(){
+    uemail2 = document.getElementById("email2").value 
+    uclr = document.getElementById("clr1").value
+    for(let i=0;i<=noofusrs;i++){
+        if(uemail2 == emails[i])
+        {
+            if(uclr != fvclr[i]){
+               alert("Not matching with the details given")
+            }
+        }
+    }
+    document.getElementById("sec1").style.display = "none"
+    document.getElementById("sec2").style.display = "none"
+    document.getElementById("sec3").style.display = "none"
+    document.getElementById("sec5").style.display = "none"
+    document.getElementById("sec6").style.display = "none"
+    document.getElementById("sec4").style.display = "block"
+}
+
+function passchange(){
+    uemail3 = document.getElementById("email4").value 
+    passch1 = document.getElementById("pwd3").value 
+    passch2 = document.getElementById("pwd4").value 
+    if(passch1 != passch2)
+    {
+        alert("Both the passwords are not same")
+    }
+    else{
+        for(let i=0;i<=noofusrs;i++){
+            if(uemail3 == emails[i]){
+                passwd[i] = passch1
+            }
+        }
+        
+    }
+    document.getElementById("sec4").style.display = "none"
+    document.getElementById("sec1").style.display = "none"
+    document.getElementById("sec3").style.display = "none"
+    document.getElementById("sec5").style.display = "none"
+    document.getElementById("sec6").style.display = "none"
+    document.getElementById("sec2").style.display = "block"
+}
+
+function passwordcheck(){
+    document.getElementById("sec1").style.display = "none"
+    document.getElementById("sec2").style.display = "none"
+    document.getElementById("sec4").style.display = "none"
+    document.getElementById("sec5").style.display = "none"
+    document.getElementById("sec6").style.display = "none"
+    document.getElementById("sec3").style.display = "block"
+}
+
+function inpage(){
+    document.getElementById("sec1").style.display = "none"
+    document.getElementById("sec2").style.display = "none"
+    document.getElementById("sec3").style.display = "none"
+    document.getElementById("sec4").style.display = "none"
+    document.getElementById("sec6").style.display = "none"
+    document.getElementById("sec5").style.display = "block"
+    usrnames = document.getElementById("emailid1").value
+    for(let i=0;i<noofusrs;i++){
+        if(usrnames == emails[i])
+        {
+            document.getElementById("user").innerHTML = fulname[i]
+        }
+    }
+}
+
+function addtothecart(){
+    brinj = document.getElementById("price1").value * parseInt(60);
+    tomat = document.getElementById("price2").value* 30;
+    potat = document.getElementById("price3").value * 40;
+    
+}
+
+function checkout()
+{
+    document.getElementById("sec1").style.display = "none"
+    document.getElementById("sec2").style.display = "none"
+    document.getElementById("sec3").style.display = "none"
+    document.getElementById("sec4").style.display = "none"
+    document.getElementById("sec5").style.display = "none"
+    document.getElementById("sec6").style.display = "block"
+    totals = potat + tomat + brinj
+    
+    document.getElementById("tot").innerHTML = totals
+}
+
+</script>
+</html>

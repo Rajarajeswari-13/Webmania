@@ -1,0 +1,57 @@
+body{
+    background-image: url("../images/bg2.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#sec1 , #sec2 ,#sec3 , #sec4 , #sec6{
+    width: 50%;
+    height: 300px;
+    width: 50%;
+    height: 405px;
+    margin: 20vh 20%;
+    margin-top: 25vh;
+    padding-left:20px ;
+    padding-top: 30px; 
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    background-color: white;
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200px;
+
+    
+}
+
+#sec5 div{
+    background-color: white;
+    border: 2px;
+    border-style: solid;
+    height: 300px;
+}
+
+#sec5 {
+    height: 450px;
+}
+
+
+td{
+    padding-left: 30px;
+}
+
+h2{
+   margin-left: 25px;
+  font-size: 30px;
+}
+
+
+#sec6 div{
+    background-color: white;
+    width: 50%;
+    height: 100px;
+}
+section
+{
+    /* display:none ;  */
+}
+
